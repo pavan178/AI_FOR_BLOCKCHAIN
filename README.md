@@ -30,7 +30,7 @@ Previous models, such as LSTM networks, have been effective in identifying and a
 
 Ultimately, both models will merge into a single platform, offering real-time assistance to Solana users, effectively combating fraudulent activities.
 
-Crypto Transactions Fraud Detection
+### Crypto Transactions Fraud Detection
 This project aims to detect fraudulent activities in cryptocurrency transactions using machine learning techniques. The dataset used in this project is obtained from an open-source platform (Kaggle) and contains information about various crypto transactions.
 Data Extraction
 Frequency of Transactions
