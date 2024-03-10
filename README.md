@@ -77,6 +77,7 @@ This project aims to leverage artificial intelligence (AI) to enhance the securi
 
 Crypto Transactions Fraud Detection
 This project aims to detect fraudulent activities in cryptocurrency transactions using machine learning techniques. The dataset used in this project is obtained from an open-source platform (Kaggle) and contains information about various crypto transactions.
+
 Data Extraction
 Frequency of Transactions
 •	Analyze Sent tnx and Received Tnx distribution; spikes or drops may indicate unusual activity.
@@ -98,7 +99,7 @@ ERC20 Token Types
 •	Monitor most sent/received ERC20 token types for sudden changes indicating fraud.
 Transaction Patterns Over Time
 •	Visualize transaction-related features over time to spot irregularities.
-Pre-Processing
+
 1.	Data Preprocessing:
 •	Removing special characters, making the data more uniform, handling missing values and imputation, Feature extraction, Feature engineering, PCA analysis, and finding most important features to build a model.
 •	Tokenization of categorical columns using MultiLabelBinarizer.
