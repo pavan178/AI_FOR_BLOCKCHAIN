@@ -74,27 +74,84 @@ Implementation of advanced LLM based chat bot to advice and detect sophisticated
 
 This project aims to leverage artificial intelligence (AI) to enhance the security within the Solana blockchain network. Using advanced AI techniques, we analyze transaction data to detect potential fraud and ensure content integrity, providing a safer blockchain ecosystem for users and developers.
 
-## Methodology
+Crypto Transactions Fraud Detection
+This project aims to detect fraudulent activities in cryptocurrency transactions using machine learning techniques. The dataset used in this project is obtained from an open-source platform (Kaggle) and contains information about various crypto transactions.
+Data Extraction
+Frequency of Transactions
+•	Analyze Sent tnx and Received Tnx distribution; spikes or drops may indicate unusual activity.
+Timing Patterns
+•	Investigate Avg min between sent tnx and received tnx for transaction regularity; abrupt changes suggest fraud.
+Transaction Amounts
+•	Examine min/max/avg values received and sent; compare with contract interactions for anomalies.
+ERC20 Token Transactions
+•	Review ERC20-related columns for token transactions; watch for irregularities compared to ETH transactions.
+Address Patterns
+•	Analyze Unique Received from and Sent To Addresses for involvement; watch for sudden address increases.
+Total Ether Balance
+•	Detect discrepancies in total ether balance for potentially fraudulent activities.
+Contract Creation
+•	Investigate Created Contracts for sudden increases; may indicate fraudulent smart contracts.
+Time Span
+•	Analyze Time Diff between first and last (Mins) for transaction duration anomalies.
+ERC20 Token Types
+•	Monitor most sent/received ERC20 token types for sudden changes indicating fraud.
+Transaction Patterns Over Time
+•	Visualize transaction-related features over time to spot irregularities.
+Pre-Processing
+1.	Data Preprocessing:
+•	Removing special characters, making the data more uniform, handling missing values and imputation, Feature extraction, Feature engineering, PCA analysis, and finding most important features to build a model.
+•	Tokenization of categorical columns using MultiLabelBinarizer.
+•	Standardization of numeric columns using StandardScaler.
+•	Principal Component Analysis (PCA) for dimensionality reduction.
+•	Handling missing values and renaming columns.
+2.	Exploratory Data Analysis (EDA):
+•	Visualization of missing values heatmap.
+•	Correlation analysis using a heatmap to understand feature relationships.
+•	Identification of top features based on correlation with the target variable.
+3.	Model Training and Evaluation:
+•	Utilization of a RandomForestClassifier as the base model.
+•	Splitting the data into train, validation, and test sets.
+•	Evaluation of the model on the validation set for ROC AUC and accuracy.
+•	Cross-validation to assess model performance on training data.
+•	Final evaluation on the test set for generalization performance.
+4.	Results:
+•	Assessment of ROC AUC and accuracy on validation and test sets.
+•	Calculation of mean ROC AUC and accuracy through cross-validation.
+5.	Insights:
+•	The model demonstrates robustness in terms of performance across different datasets.
+•	It provides insights into feature importance through correlation analysis.
+•	Visualization techniques aid in understanding data characteristics and model performance.
+6.	Further Improvements:
+•	Experimentation with different machine learning algorithms to explore performance variations.
+•	Feature engineering to enhance model interpretability and predictive power.
+•	Fine-tuning hyperparameters for optimizing model performance.
+Overall, the model presents a structured approach to fraud detection, encompassing data preprocessing, exploratory analysis, model training, and evaluation, with the potential for further enhancements and optimizations, achieving the Mean ROC AUC: 0.9977501839597485 and Mean Accuracy: 0.989996343785065.
+
+
+
+## Methodology FOR LLMS to Use ai for user security and assistance in Defi marketplace
 
 The project utilizes a multi-step process involving data loading, processing, AI model interaction, and indexing via Pinecone, followed by AI analysis for content and transaction security. Here is an overview of the methodology used:
 
-1. **Library Installation**: Essential libraries are installed to support AI model functions, data processing, and vector storage.
+1. Library Installation: Essential libraries are installed to support AI model functions, data processing, and vector storage.
 
-2. **Data Loading**: Data is loaded from a PDF, likely containing Solana whitepapers or relevant blockchain transaction data.
+2. Data Loading: Data is loaded from a PDF, likely containing Solana whitepapers or relevant blockchain transaction data.
 
-3. **Text Splitting**: Loaded data is split into manageable chunks for easier processing.
+3. Text Splitting: Loaded data is split into manageable chunks for easier processing.
 
-4. **Embeddings Generation**: Each text chunk is processed to create embeddings that capture the semantic meaning of the text, which are essential for similarity searches.
+4. Embeddings Generation: Each text chunk is processed to create embeddings that capture the semantic meaning of the text, which are essential for similarity searches.
 
-5. **Vector Storage with Pinecone**: The generated embeddings are stored using Pinecone, a vector database optimized for similarity search.
+5. Vector Storage with Pinecone: The generated embeddings are stored using Pinecone, a vector database optimized for similarity search.
 
-6. **Similarity Search Setup**: The infrastructure for performing similarity searches on the indexed data is initialized.
+6. Similarity Search Setup: The infrastructure for performing similarity searches on the indexed data is initialized.
 
-7. **AI Model Interaction**: Utilizing a pre-trained model, likely a version of GPT (such as a Llama model), the system is set up to process queries and detect patterns indicative of fraudulent activity.
+7. AI Model Interaction: Utilizing a pre-trained model, likely a version of GPT (such as a Llama model), the system is set up to process queries and detect patterns indicative of fraudulent activity.
 
-8. **Index Creation and Management**: An index is created in Pinecone to manage the embeddings, allowing for efficient retrieval during similarity searches.
+8. Index Creation and Management: An index is created in Pinecone to manage the embeddings, allowing for efficient retrieval during similarity searches.
 
-9. **Model Conversion and Loading**: The AI model is converted to a format suitable for the environment, and loaded for execution.
+9. Model Conversion and Loading: The AI model is converted to a format suitable for the environment, and loaded for execution.
+
+
 
 ## Execution Flow
 
