@@ -33,12 +33,12 @@ Ultimately, both models will merge into a single platform, offering real-time as
 
 
 
-###Work done so far:
+### Work done so far:
 The initial step has achieved a remarkable accuracy of 98.9%. Key features highly correlated with fraudulent transactions include 'Time_Diff_between_first_and_last_(Mins)', 'Avg_min_between_received_tnx', 'total_transactions_(including_tnx_to_create_contract', 'Received_Tnx', 'Sent_tnx', 'avg_val_sent', and 'Unique_Sent_To_Addresses', among others.
 
 Additionally, progress has been made on developing the LLM chatbot, currently in the midst of testing.
 
-###Work to be done:
+### Work to be done:
 Fine-tune the existing model using transfer learning on Solona's unlabelled transaction dataset.
 Implement an advanced LLM-based chatbot to detect and advise on sophisticated DeFi fraud, including Rug pull, Fake token offering, Honeypot contract, and Ponzi scheme.
 
@@ -106,23 +106,28 @@ Transaction Patterns Over Time
 •	Standardization of numeric columns using StandardScaler.
 •	Principal Component Analysis (PCA) for dimensionality reduction.
 •	Handling missing values and renaming columns.
+
 2.	Exploratory Data Analysis (EDA):
 •	Visualization of missing values heatmap.
 •	Correlation analysis using a heatmap to understand feature relationships.
 •	Identification of top features based on correlation with the target variable.
+
 3.	Model Training and Evaluation:
 •	Utilization of a RandomForestClassifier as the base model.
 •	Splitting the data into train, validation, and test sets.
 •	Evaluation of the model on the validation set for ROC AUC and accuracy.
 •	Cross-validation to assess model performance on training data.
 •	Final evaluation on the test set for generalization performance.
+
 4.	Results:
 •	Assessment of ROC AUC and accuracy on validation and test sets.
 •	Calculation of mean ROC AUC and accuracy through cross-validation.
+
 5.	Insights:
 •	The model demonstrates robustness in terms of performance across different datasets.
 •	It provides insights into feature importance through correlation analysis.
 •	Visualization techniques aid in understanding data characteristics and model performance.
+
 6.	Further Improvements:
 •	Experimentation with different machine learning algorithms to explore performance variations.
 •	Feature engineering to enhance model interpretability and predictive power.
@@ -179,7 +184,7 @@ pip install -r requirements.txt
 Use JupyterLab
 
 
-
+```bash
 
 Contributing
 Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change. Please ensure to update tests as appropriate.
