@@ -10,7 +10,7 @@ Jupyter notebooks for ai fraud detection and tagging
 
 ### Problem definition:
 
-The incidents you've mentioned highlight the vulnerabilities and challenges associated with fraudulent activities in the blockchain space, particularly on platforms like Solana. Let's elaborate on each aspect:
+
 
 Manipulation of Decentralized Exchanges (DEXs): Decentralized exchanges like Mango Market on Solana are designed to provide trustless and transparent trading. However, they can still be vulnerable to manipulation and exploits. In the case of Avraham Eisenberg's manipulation, it appears that he exploited vulnerabilities in the smart contracts or trading mechanisms of Mango Market to acquire and liquidate assets worth $116 million. Such incidents underscore the importance of robust security measures, code audits, and community vigilance in ensuring the integrity of decentralized exchanges. [1] [2]
 
